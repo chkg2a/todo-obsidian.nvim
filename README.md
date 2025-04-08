@@ -5,7 +5,6 @@ A neovim plugin for accessing todo lists for global space, and a project specifi
 
 ### Demo
 
-<img align="center" src="https://raw.githubusercontent.com/chkg2a/todo-obsidian.nvim/refs/heads/main/assets/demo.gif" width="100%" height="100%">
 
 ### Installation
 
