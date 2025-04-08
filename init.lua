@@ -53,7 +53,7 @@ end
 function M.toggle_todo()
 	if not vim.api.nvim_win_is_valid(state.floating.win) then
 		state.floating = M.open_floating_window({
-			filepath = config.file_paths.main_todo
+			filepath = config.file_paths.main_todo,
 		})
 	else
 		vim.api.nvim_win_close(state.floating.win, true)
@@ -89,6 +89,7 @@ function M.open_floating_window(opts)
 		local lines = vim.fn.readfile(abs_path)
 		vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
 		vim.api.nvim_buf_set_name(buf, abs_path)
+		vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
 	end
 
 	local win_opts = {
