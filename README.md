@@ -5,6 +5,7 @@ A neovim plugin for accessing todo lists for global space, and a project specifi
 
 ### Demo
 
+https://github.com/user-attachments/assets/875c6145-9768-472f-a8cb-69e81337ef23
 
 ### Installation
 
